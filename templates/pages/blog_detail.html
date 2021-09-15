@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% load widget_tweaks %}
+{% load static %}
+
+{% block content %}
+
+<div role="main" class="main">
+
+				<section class="page-header page-header-modern bg-color-light-scale-1 page-header-md">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12 align-self-center p-static order-2 text-center">
+								<h1 class="text-dark font-weight-bold text-8">Post Full Width</h1>
+								<span class="sub-title text-dark">Check out our Latest News!</span>
+							</div>
+							<div class="col-md-12 align-self-center order-1">
+								<ul class="breadcrumb d-block text-center">
+									<li><a href="#">Home</a></li>
+									<li class="active">Blog</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<div class="container py-4">
+
+					<div class="row">
+						<div class="col">
+							<div class="blog-posts single-post">
+
+								<article class="post post-large blog-single-post border-0 m-0 p-0">
+                                    <div class="post-image ms-0">
+										<a href="#">
+											<img src="{{ blog.large_image.url }}" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="" />
+										</a>
+									</div>
+
+									<div class="post-date ms-0">
+										<span class="day">10</span>
+										<span class="month">Jan</span>
+									</div>
+
+									<div class="post-content ms-0">
+
+										<h2 class="font-weight-semi-bold"><a href="blog-post.html">{{ blog.title }}</a></h2>
+
+										<div class="post-meta">
+											<span><i class="far fa-user"></i> By <a href="#">{{ blog.author.full_names }}</a> </span>
+										</div>
+
+										<p>{{ blog.text }}</p>
+											<h4 class="mb-3">Share this Post</h4>
+
+											<!-- Go to www.addthis.com/dashboard to customize your tools -->
+											<div class="addthis_inline_share_toolbox"></div>
+											<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60ba220dbab331b0"></script>
+
+										</div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+</div>
+
+{% endblock content %}

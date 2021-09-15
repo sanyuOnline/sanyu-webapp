@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+{% load widget_tweaks %}
+{% load static %}
+
+{% block content %}
+
+<section id="elements" class="section section-height-2 border-0 mt-0 mb-0 pt-5">
+
+					<div class="container py-2">
+						<div class="row mt-3 pb-4">
+							<div class="col text-center">
+								<h2 class="font-weight-bold mb-0">Our Blog</h2>
+							</div>
+						</div>
+                    </div>
+</section>  
+
+<div class="container py-4">
+
+					<div class="row">
+						<div class="col">
+
+							<div class="blog-posts">
+								
+								<div class="masonry-loader masonry-loader-showing">
+									<div class="masonry row" data-plugin-masonry data-plugin-options="{'itemSelector': '.masonry-item'}">
+                                        {% for blog in blogs  %}
+										<div class="masonry-item no-default-style col-md-4">
+											<article class="post post-medium border-0 pb-0 mb-5">
+												<div class="post-image">
+													<a href="{% url 'blog_detail' blog.pk %}">
+														<img src="{{ blog.small_image.url }}" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="Top Camper Trailer Towing Tips" />
+													</a>
+												</div>
+
+												<div class="post-content">
+
+													<h2 class="font-weight-semibold text-5 line-height-6 mt-3 mb-2"><a href="{% url 'blog_detail' blog.pk %}">{{ blog.title }}</a></h2>
+
+													<div class="post-meta">
+														<span><i class="far fa-user"></i> By <a href="#">{{ blog.author.full_names }}</a> </span>
+														<span class="d-block mt-2"><a href="{% url 'blog_detail' blog.pk %}" class="btn btn-xs btn-light text-1 text-uppercase">Read More</a></span>
+													</div>
+
+												</div>
+											</article>
+										</div>
+                                        {% endfor %}
+									</div>
+								</div>
+	
+								<div class="row">
+									<div class="col">
+										<ul class="pagination float-end">
+											<li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-left"></i></a></li>
+											<li class="page-item active"><a class="page-link" href="#">1</a></li>
+											<li class="page-item"><a class="page-link" href="#">2</a></li>
+											<li class="page-item"><a class="page-link" href="#">3</a></li>
+											<li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-right"></i></a></li>
+										</ul>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+
+
+{% endblock content %}
