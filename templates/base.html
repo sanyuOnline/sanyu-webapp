@@ -165,16 +165,24 @@
 																Donate
 															</a>
 														</li>
-                                                        <li class="dropdown dropdown-full-color dropdown-light">
+                                                        <li class="dropdown dropdown-full-color dropdown-light ">
 															<a class="dropdown-item dropdown-toggle" href="#">
 																Blog
 															</a>
 														</li>
-														<li class="dropdown dropdown-full-color dropdown-light">
-															<a class="dropdown-item dropdown-toggle" href="{% url 'login' %}">
-																Sign Up | Log In
-															</a>
-														</li>
+														{% if user.is_authenticated %}
+															<li class="dropdown dropdown-full-color dropdown-light align-right">
+																<a class="dropdown-item dropdown-toggle" href="{% url 'user_dash' user.pk %}">
+																	My Account
+																</a>
+															</li>
+														{% else %}
+															<li class="dropdown dropdown-full-color dropdown-light align-right">
+																<a class="dropdown-item dropdown-toggle" href="{% url 'login' %}">
+																	Sign Up | Log In
+																</a>
+															</li>
+														{% endif %}
 													</ul>
 												</nav>
 											</div>
