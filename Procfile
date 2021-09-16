@@ -1,0 +1,1 @@
+web: gunicorn sanyuapp.wsgi --log-file -
