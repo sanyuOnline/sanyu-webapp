@@ -1,0 +1,419 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<div role="main" class="main">
+                <section class="page-header page-header-classic page-header-sm">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-8 order-2 order-md-1 align-self-center p-static">
+								<h1 data-title-border>Our Projects</h1>
+							</div>
+							<div class="col-md-4 order-1 order-md-2 align-self-center">
+								<ul class="breadcrumb d-block text-md-end">
+									<li><a href="#">Home</a></li>
+									<li class="active">Pages</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<div class="container">
+					<section class="call-to-action  button-centered mb-5">
+						<div class="col-12">
+							<div class="call-to-action-content">
+								<h3>SCHRPD  has a diverse portfolio of programs in Uganda and elsewhere around the world</h3>
+								<p class="mb-0">that foster human rights, civil society, democracy, social and economic development. SCHRPD's approach focuses on tailoring programs to the needs of its beneficiaries in order to ensure that programs are demand-driven and sustainable. </p>
+							</div>
+						</div>
+					</section>
+
+					<div class="row py-4">
+						<div class="col-md-6 col-lg-4 mb-5  appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
+
+							<div class="card border-radius-0 bg-color-light border-0 box-shadow-1">
+								<div class="card-body">
+									<h4 class="card-title mb-1 text-4 font-weight-bold"><a href="{% url 'p1' %}">Human Rights</a></h4>
+									<a href="{% url 'p1' %}">read more</a>
+								</div>
+							</div>
+
+						</div>
+						<div class="col-md-6 col-lg-4 mb-5  appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
+
+							<div class="card border-radius-0 bg-color-light border-0 box-shadow-1">
+								<div class="card-body">
+									<h4 class="card-title mb-1 text-4 font-weight-bold">Rule of Law</h4>
+									<div data-plugin-readmore 
+										data-plugin-options="{
+											'buttonOpenLabel': 'Read More <i class=\'fas fa-chevron-down text-2 ms-1\'></i>',
+											'buttonCloseLabel': 'Read Less <i class=\'fas fa-chevron-up text-2 ms-1\'></i>',
+											'align': 'center'
+										}">
+										<p class="card-text">SCHRPD assists CSOs (including bar associations) in providing legal services to the needy, increasing access to justice, and promoting the rule of law. SCHRPD’s legal assistance programs encompass a wide range of community-based legal assistance services for the disadvantaged, including women, refugees and displaced persons, victims of human rights abuse, and the poor. </p>
+										<div class="readmore-button-wrapper d-none">
+											<a href="#" class="text-decoration-none">
+												Read More
+												<i class="fas fa-chevron-down"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="col-md-6 col-lg-4 mb-5  appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
+
+							<div class="card border-radius-0 bg-color-light border-0 box-shadow-1">
+								<div class="card-body">
+									<h4 class="card-title mb-1 text-4 font-weight-bold">Advocacy</h4>
+									<div data-plugin-readmore 
+										data-plugin-options="{
+											'buttonOpenLabel': 'Read More <i class=\'fas fa-chevron-down text-2 ms-1\'></i>',
+											'buttonCloseLabel': 'Read Less <i class=\'fas fa-chevron-up text-2 ms-1\'></i>',
+											'align': 'center'
+										}">
+										<p class="card-text">We at SCHRPD, citizen engagement in democratic processes is often achieved through advocacy. SCHRPD is a leader in CSO advocacy training and technical assistance. SCHRPD assistance in advocacy enables CSOs to mobilize citizen participation in decision-making at all levels of society. </p>
+										<div class="readmore-button-wrapper d-none">
+											<a href="#" class="text-decoration-none">
+												Read More
+												<i class="fas fa-chevron-down"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="col-md-6 col-lg-4 mb-5  appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
+
+							<div class="card border-radius-0 bg-color-light border-0 box-shadow-1">
+								<div class="card-body">
+									<h4 class="card-title mb-1 text-4 font-weight-bold">LGBTI Rights</h4>
+									<div data-plugin-readmore 
+										data-plugin-options="{
+											'buttonOpenLabel': 'Read More <i class=\'fas fa-chevron-down text-2 ms-1\'></i>',
+											'buttonCloseLabel': 'Read Less <i class=\'fas fa-chevron-up text-2 ms-1\'></i>',
+											'align': 'center'
+										}">
+										<p class="card-text">SCHRPD works to uphold the human rights of lesbians, gay, bisexual, transgender, intersex, and other people experiencing violence and discrimination based on sexual orientation or gender identity and expression. We collaborate with the in – country and diasporan human rights defenders focusing on countries whose laws, policies and attitude foster violence and discrimination.</p>
+										<p class="card-text">SCHRPD works with them to address issues ranging from laws criminalizing same sex relationships and discrimination against LGBTI people for anti – LGBTI violence by documenting and reporting on them to the international community, advocating for change in legislation and pressing for greater protection.</p>
+										<div class="readmore-button-wrapper d-none">
+											<a href="#" class="text-decoration-none">
+												Read More
+												<i class="fas fa-chevron-down"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="col-md-6 col-lg-4 mb-5  appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
+
+							<div class="card border-radius-0 bg-color-light border-0 box-shadow-1">
+								<div class="card-body">
+									<h4 class="card-title mb-1 text-4 font-weight-bold">Women Rights</h4>
+									<p class="card-text">SCHRPD works to end violence against women through legal reform, technical assistance and documentation.</p>
+								</div>
+							</div>
+
+						</div>
+						<div class="col-md-6 col-lg-4 mb-5  appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
+
+							<div class="card border-radius-0 bg-color-light border-0 box-shadow-1">
+								<div class="card-body">
+									<h4 class="card-title mb-1 text-4 font-weight-bold">Transitional Justice</h4>
+									<div data-plugin-readmore 
+										data-plugin-options="{
+											'buttonOpenLabel': 'Read More <i class=\'fas fa-chevron-down text-2 ms-1\'></i>',
+											'buttonCloseLabel': 'Read Less <i class=\'fas fa-chevron-up text-2 ms-1\'></i>',
+											'align': 'center'
+										}">
+										<p class="card-text">SCHRPD develops practical strategies to assist countries emerging from conflict and repression to create peace and accountability. We adapt specific human rights monitoring methods for use in the transitional justice context where justice system response is inadequate to provide accountability for large – scale human rights violations.</p>
+										<div class="readmore-button-wrapper d-none">
+											<a href="#" class="text-decoration-none">
+												Read More
+												<i class="fas fa-chevron-down"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="col-md-6 col-lg-4 mb-5  appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
+
+							<div class="card border-radius-0 bg-color-light border-0 box-shadow-1">
+								<div class="card-body">
+									<h4 class="card-title mb-1 text-4 font-weight-bold">Migrant Rights</h4>
+									<div data-plugin-readmore 
+										data-plugin-options="{
+											'buttonOpenLabel': 'Read More <i class=\'fas fa-chevron-down text-2 ms-1\'></i>',
+											'buttonCloseLabel': 'Read Less <i class=\'fas fa-chevron-up text-2 ms-1\'></i>',
+											'align': 'center'
+										}">
+										<p class="card-text">SCHRPD believes in and works for immigration systems guided by international human rights standards, allowing for a system that is orderly, safe, fair, and just.</p>
+										<p class="card-text">SCHRPD also works with pro bono attorneys to provide free legal services to all immigrants who are victims of human rights abuses; we also work to reform the legal system itself by documenting and reporting on human rights abuses and advocating for better immigration laws. Our extensive education resources help educators, individuals and communities understand the dynamics of migration through a human rights lens.</p>
+										<div class="readmore-button-wrapper d-none">
+											<a href="#" class="text-decoration-none">
+												Read More
+												<i class="fas fa-chevron-down"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="col-md-6 col-lg-4 mb-5  appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
+
+							<div class="card border-radius-0 bg-color-light border-0 box-shadow-1">
+								<div class="card-body">
+									<h4 class="card-title mb-1 text-4 font-weight-bold">Human Trafficking</h4>
+									<div data-plugin-readmore 
+										data-plugin-options="{
+											'buttonOpenLabel': 'Read More <i class=\'fas fa-chevron-down text-2 ms-1\'></i>',
+											'buttonCloseLabel': 'Read Less <i class=\'fas fa-chevron-up text-2 ms-1\'></i>',
+											'align': 'center'
+										}">
+										<p class="card-text">SCHRPD combats human trafficking in Uganda and elsewhere around the world through prevention, survivor protection and legal reform. We monitor governance compliance with international obligations, document violations and advocate for rights – based – public policy in response, We provide training and technical assistance and communities to communities seeking to improve their response to both sex and labor trafficking.</p>
+										<div class="readmore-button-wrapper d-none">
+											<a href="#" class="text-decoration-none">
+												Read More
+												<i class="fas fa-chevron-down"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="col-md-6 col-lg-4 mb-5  appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
+
+							<div class="card border-radius-0 bg-color-light border-0 box-shadow-1">
+								<div class="card-body">
+									<h4 class="card-title mb-1 text-4 font-weight-bold">International Advocacy</h4>
+									<div data-plugin-readmore 
+										data-plugin-options="{
+											'buttonOpenLabel': 'Read More <i class=\'fas fa-chevron-down text-2 ms-1\'></i>',
+											'buttonCloseLabel': 'Read Less <i class=\'fas fa-chevron-up text-2 ms-1\'></i>',
+											'align': 'center'
+										}">
+										<p class="card-text">SCHRPD monitors and documents human rights conditions in countries around the world and call attention to those conditions at the United Nations and international human rights bodies through submitting reports, making oral or written statements and directly participating in human rights body meetings and reviews of treaty compliance. We partner with human rights defenders to conduct fact – finding and reporting and to increase their capacity to improve laws and policies for better protection of human rights in their countries through advocacy at the local and national level as needed at the United Nations and other international bodies.</p>
+										<div class="readmore-button-wrapper d-none">
+											<a href="#" class="text-decoration-none">
+												Read More
+												<i class="fas fa-chevron-down"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="col-md-6 col-lg-4 mb-5  appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
+
+							<div class="card border-radius-0 bg-color-light border-0 box-shadow-1">
+								<div class="card-body">
+									<h4 class="card-title mb-1 text-4 font-weight-bold">Civic Education </h4>
+									<div data-plugin-readmore 
+										data-plugin-options="{
+											'buttonOpenLabel': 'Read More <i class=\'fas fa-chevron-down text-2 ms-1\'></i>',
+											'buttonCloseLabel': 'Read Less <i class=\'fas fa-chevron-up text-2 ms-1\'></i>',
+											'align': 'center'
+										}">
+										<p class="card-text">SCHRPD works in both formal and informal educational settings, it provides training, technical assistance, and other resources to enable civil society organizations, professional teacher organizations, PTAs, government institutions, and others to promote understanding of democratic values and processes, including citizens rights and responsibilities. </p>
+										<div class="readmore-button-wrapper d-none">
+											<a href="#" class="text-decoration-none">
+												Read More
+												<i class="fas fa-chevron-down"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="col-md-6 col-lg-4 mb-5  appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
+
+							<div class="card border-radius-0 bg-color-light border-0 box-shadow-1">
+								<div class="card-body">
+									<h4 class="card-title mb-1 text-4 font-weight-bold">Civil Society Building and Institutional Development </h4>
+									<div data-plugin-readmore 
+										data-plugin-options="{
+											'buttonOpenLabel': 'Read More <i class=\'fas fa-chevron-down text-2 ms-1\'></i>',
+											'buttonCloseLabel': 'Read Less <i class=\'fas fa-chevron-up text-2 ms-1\'></i>',
+											'align': 'center'
+										}">
+										<p class="card-text">SCHRPD focuses on strengthening civil society as a sector by building networks and coalitions, increasing contact and collaboration between civil society and other sectors (including government), and improving the legal and regulatory environment impacting civil society development. In assisting the institutional development of civil society organizations, SCHRPD combines formal training with tailored technical assistance services to individual organizations. </p>
+										<div class="readmore-button-wrapper d-none">
+											<a href="#" class="text-decoration-none">
+												Read More
+												<i class="fas fa-chevron-down"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="col-md-6 col-lg-4 mb-5  appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
+
+							<div class="card border-radius-0 bg-color-light border-0 box-shadow-1">
+								<div class="card-body">
+									<h4 class="card-title mb-1 text-4 font-weight-bold">Community Mobilization and Development </h4>
+									<div data-plugin-readmore 
+										data-plugin-options="{
+											'buttonOpenLabel': 'Read More <i class=\'fas fa-chevron-down text-2 ms-1\'></i>',
+											'buttonCloseLabel': 'Read Less <i class=\'fas fa-chevron-up text-2 ms-1\'></i>',
+											'align': 'center'
+										}">
+										<p class="card-text">Community mobilization ensures citizens participation as stakeholders in decision-making processes – in partnership with local government where possible – to work together to develop their communities. SCHRPD works with local citizens to form community groups that expand public involvement. SCHRPD facilitates dialogue and cooperation by bringing together stakeholders for civic dialogue and mobilization on key priority issues. </p>
+										<div class="readmore-button-wrapper d-none">
+											<a href="#" class="text-decoration-none">
+												Read More
+												<i class="fas fa-chevron-down"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="col-md-6 col-lg-4 mb-5  appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
+
+							<div class="card border-radius-0 bg-color-light border-0 box-shadow-1">
+								<div class="card-body">
+									<h4 class="card-title mb-1 text-4 font-weight-bold">Electoral Processes </h4>
+									<p class="card-text">SCHRPD encourages increased citizen participation in electoral processes through support for NGO voter education and get-out-the-vote programs.  </p>
+								</div>
+							</div>
+
+						</div>
+						<div class="col-md-6 col-lg-4 mb-5  appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
+
+							<div class="card border-radius-0 bg-color-light border-0 box-shadow-1">
+								<div class="card-body">
+									<h4 class="card-title mb-1 text-4 font-weight-bold">Local Governance </h4>
+									<div data-plugin-readmore 
+										data-plugin-options="{
+											'buttonOpenLabel': 'Read More <i class=\'fas fa-chevron-down text-2 ms-1\'></i>',
+											'buttonCloseLabel': 'Read Less <i class=\'fas fa-chevron-up text-2 ms-1\'></i>',
+											'align': 'center'
+										}">
+										<p class="card-text">Here At SCHRPD, fruitful collaboration between constituents and their elected leaders is a critical step toward building democracy, but is difficult to realize in countries where political power traditionally has been concentrated in the hands of a few. Through technical assistance and training programs aimed at bringing together government officials and the community at large, SCHRPD builds democratic linkages between citizens’ groups and local government bodies to encourage the equitable distribution of authority and enhance local autonomy. SCHRPD also works to increase the effectiveness of civil society in the fight against corruption. </p>
+										<div class="readmore-button-wrapper d-none">
+											<a href="#" class="text-decoration-none">
+												Read More
+												<i class="fas fa-chevron-down"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="col-md-6 col-lg-4 mb-5  appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
+
+							<div class="card border-radius-0 bg-color-light border-0 box-shadow-1">
+								<div class="card-body">
+									<h4 class="card-title mb-1 text-4 font-weight-bold">Displaced Persons and Refugees </h4>
+									<div data-plugin-readmore 
+										data-plugin-options="{
+											'buttonOpenLabel': 'Read More <i class=\'fas fa-chevron-down text-2 ms-1\'></i>',
+											'buttonCloseLabel': 'Read Less <i class=\'fas fa-chevron-up text-2 ms-1\'></i>',
+											'align': 'center'
+										}">
+										<p class="card-text">Few issues are as complex as the fate of tens of thousands of displaced persons and the need to reintegrate mixed ethnic populations on a peaceful, lasting basis. SCHRPD is supporting the development of local NGOs capacity to assist the sustainable return and reintegration of refugees and displaced persons in Uganda and worldwide.</p>
+										<div class="readmore-button-wrapper d-none">
+											<a href="#" class="text-decoration-none">
+												Read More
+												<i class="fas fa-chevron-down"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="col-md-6 col-lg-4 mb-5  appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
+
+							<div class="card border-radius-0 bg-color-light border-0 box-shadow-1">
+								<div class="card-body">
+									<h4 class="card-title mb-1 text-4 font-weight-bold">Independent Media </h4>
+									<div data-plugin-readmore 
+										data-plugin-options="{
+											'buttonOpenLabel': 'Read More <i class=\'fas fa-chevron-down text-2 ms-1\'></i>',
+											'buttonCloseLabel': 'Read Less <i class=\'fas fa-chevron-up text-2 ms-1\'></i>',
+											'align': 'center'
+										}">
+										<p class="card-text">SCHRPD’s work in developing an Independent Media in countries undergoing a democratic transition includes strengthening emerging commercial and public media and emphasizes independent news and public affairs reporting capacities. SCHRPD builds media capacity to provide fair and balanced information in response to public needs while also seeking to establish a legal, regulatory and policy environment that supports an independent media. </p>
+										<div class="readmore-button-wrapper d-none">
+											<a href="#" class="text-decoration-none">
+												Read More
+												<i class="fas fa-chevron-down"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="col-md-6 col-lg-4 mb-5  appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
+
+							<div class="card border-radius-0 bg-color-light border-0 box-shadow-1">
+								<div class="card-body">
+									<h4 class="card-title mb-1 text-4 font-weight-bold">Small and Medium Enterprise (SME) Development</h4>
+									<div data-plugin-readmore 
+										data-plugin-options="{
+											'buttonOpenLabel': 'Read More <i class=\'fas fa-chevron-down text-2 ms-1\'></i>',
+											'buttonCloseLabel': 'Read Less <i class=\'fas fa-chevron-up text-2 ms-1\'></i>',
+											'align': 'center'
+										}">
+										<p class="card-text">SCHRPD’s SME development activities includes providing training and technical assistance to SMEs, facilitating access to credit, investment and markets, and support for capacity building of SME development agencies, business associations and resource centers.</p>
+										<div class="readmore-button-wrapper d-none">
+											<a href="#" class="text-decoration-none">
+												Read More
+												<i class="fas fa-chevron-down"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="col-md-6 col-lg-4 mb-5  appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
+
+							<div class="card border-radius-0 bg-color-light border-0 box-shadow-1">
+								<div class="card-body">
+									<h4 class="card-title mb-1 text-4 font-weight-bold">Local Economic Development</h4>
+									<div data-plugin-readmore 
+										data-plugin-options="{
+											'buttonOpenLabel': 'Read More <i class=\'fas fa-chevron-down text-2 ms-1\'></i>',
+											'buttonCloseLabel': 'Read Less <i class=\'fas fa-chevron-up text-2 ms-1\'></i>',
+											'align': 'center'
+										}">
+										<p class="card-text">SCHRPD provides municipalities training and technical assistance in developing local economic development strategies and plans leading to increased trade and investment. SCHRPD organizes highly participatory processes in which municipalities and stakeholders work together to develop local economic strategies and plans.</p>
+										<div class="readmore-button-wrapper d-none">
+											<a href="#" class="text-decoration-none">
+												Read More
+												<i class="fas fa-chevron-down"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+{% endblock content %}
