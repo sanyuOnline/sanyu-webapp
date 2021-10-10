@@ -25,5 +25,7 @@ urlpatterns = [
     path('projects/independent-media/',  P14View.as_view(), name ='p14'),
     path('projects/sme-development/',  P15View.as_view(), name ='p15'),
     path('projects/local-economic-development/',  P16View.as_view(), name ='p16'),
-    path('projects/agriculture-development/',  P17View.as_view(), name ='p17')
+    path('projects/agriculture-development/',  P17View.as_view(), name ='p17'),
+    path('projects/womens-rights/',  P18View.as_view(), name ='p18'),
+    path('projects/electoral-processes/',  P19View.as_view(), name ='p19'),
 ]

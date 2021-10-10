@@ -69,3 +69,9 @@ class P16View(TemplateView):
 class P17View(TemplateView):
     template_name = "projects/p17.html"
 
+class P18View(TemplateView):
+    template_name = "projects/p18.html"
+
+class P19View(TemplateView):
+    template_name = "projects/p19.html"
+
