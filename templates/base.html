@@ -187,11 +187,49 @@
 															
 														</li>
 														<li class="dropdown dropdown-full-color dropdown-light "><a class="dropdown-item dropdown-toggle" href="{% url 'about' %}">About Us</a></li>
-														<li class="dropdown dropdown-full-color dropdown-light">
+														<li class="dropdown dropdown-mega dropdown-light">
 															<a class="dropdown-item dropdown-toggle" href="{% url 'projects' %}">
-																Projects
+																Programs
 															</a>
-															
+															<ul class="dropdown-menu">
+																<li>
+																	<div class="dropdown-mega-content">
+																		<div class="row">
+																			<a href="{% url 'projects' %}"><span class="dropdown-mega-sub-title">Overview</span></a>
+																			<div class="col-lg-3">
+																				<ul class="dropdown-mega-sub-nav">
+																					<li><a class="dropdown-item" href="{% url 'p1' %}">Human Rights</a></li>
+																					<li><a class="dropdown-item" href="{% url 'p2' %}">Rule of Law</a></li>
+																					<li><a class="dropdown-item" href="{% url 'p4' %}">LGBTI Rights</a></li>
+																					<li><a class="dropdown-item" href="{% url 'p18' %}">Womens Rights</a></li>
+																					<li><a class="dropdown-item" href="{% url 'p5' %}">Transitional Justice</a></li>
+																					<li><a class="dropdown-item" href="{% url 'p6' %}">Migrant Rights</a></li>
+																				</ul>
+																			</div>
+																			<div class="col-lg-4">
+																				<ul class="dropdown-mega-sub-nav">
+																					<li><a class="dropdown-item" href="{% url 'p7' %}">Human Trafficking</a></li>
+																					<li><a class="dropdown-item" href="{% url 'p8' %}">International Advocacy</a></li>
+																					<li><a class="dropdown-item" href="{% url 'p9' %}">Civic Education</a></li>
+																					<li><a class="dropdown-item" href="{% url 'p10' %}">Civil Society Building and Institutional Development</a></li>
+																					<li><a class="dropdown-item" href="{% url 'p11' %}">Community Mobilization and Development</a></li>
+																					<li><a class="dropdown-item" href="{% url 'p19' %}">Electoral Processes</a></li>
+																				</ul>
+																			</div>
+																			<div class="col-lg-3">
+																				<ul class="dropdown-mega-sub-nav">
+																					<li><a class="dropdown-item" href="{% url 'p12' %}">Local Governance</a></li>
+																					<li><a class="dropdown-item" href="{% url 'p13' %}">Displaced Persons and Refugees</a></li>
+																					<li><a class="dropdown-item" href="{% url 'p14' %}">Independent Media</a></li>
+																					<li><a class="dropdown-item" href="{% url 'p15' %}">Small and Medium Enterprise(SME) Development</a></li>
+																					<li><a class="dropdown-item" href="{% url 'p16' %}">Local Economic Development</a></li>
+																					<li><a class="dropdown-item" href="{% url 'p17' %}">Agriculture Development</a></li>
+																				</ul>
+																			</div>
+																		</div>
+																	</div>
+																</li>
+															</ul>
 														</li>
 														<li class="dropdown dropdown-full-color dropdown-light">
 															<a class="dropdown-item dropdown-toggle" href="{% url 'contact_us' %}">
