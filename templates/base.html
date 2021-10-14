@@ -186,7 +186,38 @@
 															</a>
 															
 														</li>
-														<li class="dropdown dropdown-full-color dropdown-light "><a class="dropdown-item dropdown-toggle" href="{% url 'about' %}">About Us</a></li>
+														<li class="dropdown dropdown-mega dropdown-light ">
+															<a class="dropdown-item dropdown-toggle" href="{% url 'about' %}">
+																About Us
+															</a>
+															<ul class="dropdown-menu" style='width:550px;'>
+																<li>
+																	<div class="dropdown-mega-content">
+																		<div class="row">
+																			<a href="{% url 'about' %}"><span class="dropdown-mega-sub-title">Overview</span></a>
+																			<div class="col-lg-5">
+																				<span class="dropdown-mega-sub-title">About Us</span>
+																				<ul class="dropdown-mega-sub-nav">
+																					<li><a class="dropdown-item" href="{% url 'about' %}#who">Who we are</a></li>
+																					<li><a class="dropdown-item" href="{% url 'about' %}#mission">Our Mission</a></li>
+																					<li><a class="dropdown-item" href="{% url 'about' %}#vision">Our Vision</a></li>
+																					<li><a class="dropdown-item" href="{% url 'about' %}#background">Background</a></li>
+																					<li><a class="dropdown-item" href="{% url 'about' %}#history">Our History</a></li>
+																					<li><a class="dropdown-item" href="{% url 'about' %}#approach">Our Approach</a></li>
+																				</ul>
+																			</div>
+																			<div class="col-lg-5">
+																				<span class="dropdown-mega-sub-title">Our Leadership</span>
+																				<ul class="dropdown-mega-sub-nav">
+																					<li><a class="dropdown-item" href="{% url 'about' %}#pres">Founder & President</a></li>
+																					<li><a class="dropdown-item" href="{% url 'about' %}#cf">Co – Founder</a></li>
+																					<li><a class="dropdown-item" href="{% url 'about' %}#sg">Secretary - General</a></li>
+																			</div>
+																		</div>
+																	</div>
+																</li>
+															</ul>
+														</li>
 														<li class="dropdown dropdown-mega dropdown-light">
 															<a class="dropdown-item dropdown-toggle" href="{% url 'projects' %}">
 																Programs
